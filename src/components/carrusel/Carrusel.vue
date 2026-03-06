@@ -39,7 +39,7 @@ export default {
   },
   {
     name: 'Juan José Arenales',
-    image: '/images/Juanjo.jpg',
+    image: '../images/Juanjo.jpg',
     description:
       'Empresario, inversionista y mentor, Mercadologo con MBA, con más de 25 años de experiencia en varias industrias como construcción, bolsa de valores, banca corporativa y negocios digitales. He mentoreado a más de 8,000 emprendedores. La Misión de mi vida es ayudar a prosperar a los empresarios.'
   },
