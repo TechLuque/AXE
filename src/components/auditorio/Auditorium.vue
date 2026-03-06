@@ -7,7 +7,6 @@ const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbyNubbJFPkUej0Dk0
 const joinUrl = ref(localStorage.getItem('join_url') || '')
 const showVideoModal = ref(false)
 const showLbsModal = ref(false)
-const modalVideo = ref(null)
 
 const handleJoinClick = (e) => {
   if (!joinUrl.value) {
@@ -39,37 +38,10 @@ const handleJoinClick = (e) => {
 
 const openVideoModal = async () => {
   showVideoModal.value = true
-  await nextTick()
-
-  const video = modalVideo.value
-  if (!video) return
-
-  const tryPlay = () => {
-    const playPromise = video.play()
-    if (playPromise !== undefined) {
-      playPromise.catch(e => {
-        console.warn('No se pudo reproducir el video en Safari:', e)
-      })
-    }
-  }
-
-  // Si ya está listo
-  if (video.readyState >= 3) {
-    tryPlay()
-  } else {
-    // Esperar a que pueda reproducirse
-    video.addEventListener('canplay', tryPlay, { once: true })
-  }
 }
-
-
 
 const closeVideoModal = () => {
   showVideoModal.value = false
-  if (modalVideo.value) {
-    modalVideo.value.pause()
-    modalVideo.value.currentTime = 0
-  }
 }
 
 const openLbsModal = () => {
@@ -144,7 +116,7 @@ const closeLbsModal = () => {
               playsinline 
               loop 
               preload="metadata">
-              <source src="#" type="video/mp4" />
+              <source src="/images/Loop_LBS.mp4" type="video/mp4" />
             </video>
             <div class="overlay-text">
               <img src="/images/LOGO LBS.png" alt="LUQUE BUSINESS SUMMIT" class="overlay-title-image" />
@@ -161,14 +133,9 @@ const closeLbsModal = () => {
     <transition name="fade">
       <div class="video-modal">
         <button class="close-video" @click="closeVideoModal">✕</button>
-        <video
-          ref="modalVideo"
-          autoplay
-          controls
-          class="full-video"
-        >
-          <source src="#" type="video/mp4" />
-        </video>
+        <div class="full-video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lSYcfGlNUZI?si=D0PW3ooTqt4UcwSV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
     </transition>
   </div>
