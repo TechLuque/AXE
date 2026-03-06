@@ -298,9 +298,9 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 2rem 1.5rem;
+    padding: 100px 1.5rem 2rem 1.5rem;
     gap: 3rem;
-    height: auto; /* permite que crezca en vertical */
+    height: auto;
   }
 
   .left-column,
@@ -348,6 +348,11 @@ a {
     background: url('/images/axe_bgmob_h.webp') no-repeat center top fixed;
   }
 
+  .overlay {
+    padding-top: 100px;
+    padding-bottom: 3rem;
+    gap: 4rem;
+  }
 
   .lobby-fixed{
     background: url('/images/axe_bgmob_l.webp') no-repeat center top fixed;
