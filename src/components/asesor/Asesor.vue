@@ -56,7 +56,7 @@ const handleDipticoClick = () => {
         <div class="button-group">
 
           <a
-            href="#"
+            href="https://us02web.zoom.us/j/8656713692?omn=82849114527"
             class="hero-btn"
             @click="handleAsesorClick"
           >
@@ -77,7 +77,7 @@ const handleDipticoClick = () => {
       </div>
 
       <div class="right">
-        <img src="#" alt="Asesores" class="section-image asesor-image" />
+        <img src="/images/ZOOM ASESOR.png" alt="Asesores" class="section-image asesor-image" />
       </div>
     </div>
 

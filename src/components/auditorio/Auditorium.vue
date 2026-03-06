@@ -146,15 +146,15 @@ const closeLbsModal = () => {
         <button class="close-btn" @click="closeLbsModal">✕</button>
         <h2>Selecciona cantidad de entradas</h2>
         <div class="entries-buttons">
-          <a href="#" class="entry-btn">
+          <a href="https://cliczy.com/luque-business-summit-2026" class="entry-btn">
             $245 USD
             <span class="entry-price">1 Entrada </span>
           </a>
-          <a href="#" class="entry-btn">
+          <a href="https://cliczy.com/LBS-2Entradas" class="entry-btn">
             $445 USD
             <span class="entry-price">2 Entrada</span>
           </a>
-          <a href="#" class="entry-btn">
+          <a href="https://cliczy.com/LBS-3Entradas" class="entry-btn">
             $585 USD
             <span class="entry-price">3 Entrada</span>
           </a>
