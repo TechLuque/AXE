@@ -144,7 +144,7 @@ const closeLbsModal = () => {
               playsinline 
               loop 
               preload="metadata">
-              <source src="/images/Loop_LBS.mp4" type="video/mp4" />
+              <source src="#" type="video/mp4" />
             </video>
             <div class="overlay-text">
               <img src="/images/LOGO LBS.png" alt="LUQUE BUSINESS SUMMIT" class="overlay-title-image" />

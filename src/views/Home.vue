@@ -60,7 +60,7 @@ const closeVideoModal = () => {
         controls
         class="full-video"
         >
-        <source src="/images/INMESIÓN.mp4" type="video/mp4">
+        <source src="#" type="video/mp4">
         </video>
       </div>
   </transition>
