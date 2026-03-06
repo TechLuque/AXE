@@ -55,9 +55,7 @@ const closeVideoModal = () => {
   <transition name="fade">
     <div v-if="showVideoModal" class="video-modal">
       <button class="close-video" @click="closeVideoModal">✕</button>
-        <div class="full-video">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/V7t8VctWcMU?si=7erraDe9sqOFW-bt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V7t8VctWcMU?si=7erraDe9sqOFW-bt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
   </transition>
 
