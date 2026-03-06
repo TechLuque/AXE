@@ -167,7 +167,7 @@ const closeLbsModal = () => {
           controls
           class="full-video"
         >
-          <source src="/images/EXPERIENCIA LBS.mov" type="video/mp4" />
+          <source src="#" type="video/mp4" />
         </video>
       </div>
     </transition>
