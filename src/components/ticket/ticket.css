@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --unit: 1vmin;
+  --available-screen-min: 600;
+  --px: calc(var(--zoom) * (var(--unit) / var(--available-screen-min)));
+  --ticket: url(/images/ENTRADA-AXE MAR26_03.jpg);
+  --ar: 2/4;
+  --gutter: 8%;
+  --zoom: 100;
+  --o: 0;
+  --p: 100%;
+  --h: 50%;
+  --r: 80deg;
+}
+
+#app {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket {
+  width: calc(310 * var(--px));
+  aspect-ratio: var(--ar);
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transform: rotateY(var(--r));
+}
+
+.ticket-wrapper {
+  perspective: 1000px; 
+}
+
+
+.front::before,
+.back::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: var(--o);
+  z-index: 5;
+  background: linear-gradient(115deg,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.233) 40%,rgba(255, 255, 255, 0.459) 50%,rgba(255, 255, 255, 0.233) 40%,rgba(255, 255, 255, 0) 0%);
+  background-size: 280% 100%;
+  border-radius: inherit;
+  mask-image: var(--ticket);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: var(--ticket);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.front::before {
+  background-position: calc(100% - var(--p)) center;
+}
+
+.back::before {
+  background-position: var(--p) center;
+}
+
+.ticket::before {
+  transform: rotateY(0deg);
+}
+
+.ticket::after {
+  transform: rotateY(360deg);
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mask-image: var(--ticket);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: var(--ticket);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.front,
+.back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-style: preserve-3d;
+  z-index: 1;
+  mask-image: var(--ticket);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: var(--ticket);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.front {
+  background-image: url('/images/ENTRADA-AXE MAR26_03.jpg');
+}
+
+.back {
+  background-image: url('/images/ENTRADA-AXE MAR26_04.jpg');
+  transform: rotateY(180deg);
+}
+
+.name {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(20 * var(--px));
+  font-weight: 400;
+  color: white;
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90%;
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+@media (max-width: 2000px) {
+  .name {
+    top: 33%;
+    font-size: 3.5rem;
+  }
+}
+
+
+@media (max-width: 1700px) {
+  .name {
+    top: 30%;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .ticket {
+    top: -10%;
+    --scale: 1;
+    width: 55vw;
+    height: auto;
+
+  }
+}
+
+
+
+@media (max-width: 800px) {
+
+  .name {
+    top: 33%;
+    font-size: 4rem;
+  }
+
+}
+
+@media (max-width: 730px) {
+
+  .logo-image-welcome {
+    max-height: 120px;
+    margin-top: 6rem;
+  }
+
+
+    .ticket {
+    width: 65vw;
+
+  }
+
+}
+
+
+
+@media (max-width: 530px) {
+  .logo-image-welcome {
+    max-height: 100px;
+    margin-top: 2rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .logo-image-welcome {
+    max-height: 80px;
+    margin-top: 2rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+}

@@ -1,0 +1,361 @@
+.asesor-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  text-align: center;
+  padding: 5rem 6rem;
+  min-height: 50vh;
+}
+
+.asesor-section {
+  background: url('/images/axe_fondo_asesor.webp') no-repeat top left fixed;
+  background-size: cover;
+  background-position: center;
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.asesor-section .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.asesor-section .left {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3rem;
+}
+
+.diptico-section {
+  background: url('/images/axe_fondoseccion_02.webp') no-repeat top left fixed;
+  background-size: cover;
+  background-position: center;
+  flex-direction: row;
+  text-align: left;
+}
+
+.diptico-section .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.asesor-section .main-title {
+  color: #000000;
+}
+
+.asesor-section p {
+  color: #000000;
+}
+
+.asesor-section .hero-btn {
+  color: #ededed;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #000000;
+}
+
+.asesor-section .hero-btn:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.asesor-section p {
+  color: #000000;
+  margin-top: 0;
+  padding-right: 0;
+}
+
+.diptico-section .main-title {
+  color: #ffffff;
+}
+
+.diptico-section p {
+  color: #ffffff;
+}
+
+.diptico-section .hero-btn {
+  color: #ffffff;
+}
+
+.left {
+  flex: 1;
+}
+
+.diptico-section .left {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+
+}
+
+.main-title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding-right: 0;
+  margin: 0;
+  margin-bottom: 5rem;
+}
+
+.diptico-section .main-title {
+  margin-bottom: 2rem;
+}
+
+.asesor-section .main-title {
+  margin-bottom: 2rem;
+}
+
+.section-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 0rem 0 0rem 0;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.diptico-image {
+  max-width: 700px;
+}
+
+.asesor-image {
+  max-width: 400px;
+}
+
+p {
+  color: #000000;
+  font-size: 1.1rem;
+  margin: 0;
+  margin-top: 1.8rem;
+  font-weight: 400;
+}
+
+.diptico-section p {
+  color: #ffffff;
+  margin-top: 0;
+    padding-right: 10rem;
+
+}
+
+.button-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.asesor-section .button-group {
+  justify-content: flex-start;
+}
+
+.diptico-section .button-group {
+  justify-content: flex-start;
+}
+
+.hero-btn {
+  padding: 1.2rem 1.5rem;
+  background-color: rgba(255, 40, 80, 0.11);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border: 2px solid #FF2850;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 40, 80, 0.452);
+}
+
+.right {
+  flex: 1;
+  display: none;
+  justify-content: flex-end;
+}
+
+.event-box {
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 280px;
+  max-width: 400px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+}
+
+.placeholder-content p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .asesor-hero {
+    padding: 3rem 4rem;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    padding-right: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .asesor-hero {
+    padding: 2rem;
+    min-height: 60vh;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .asesor-section {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .asesor-section .left {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .asesor-section .button-group {
+    justify-content: center;
+  }
+
+  .asesor-section p {
+    color: #000000;
+    text-align: center;
+  }
+
+  .diptico-section {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .diptico-section .left {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .diptico-section .button-group {
+    justify-content: center;
+  }
+
+  .diptico-section p {
+    color: #ffffff;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .left {
+    flex: 1;
+    width: 100%;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .event-box {
+    max-width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .asesor-hero {
+    padding: 1.5rem;
+    min-height: 50vh;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .asesor-section {
+    flex-direction: column !important;
+  }
+
+  .asesor-section .left {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .asesor-section .button-group {
+    justify-content: center;
+  }
+
+  .diptico-section {
+    flex-direction: column !important;
+  }
+
+  .diptico-section .left {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .diptico-section .button-group {
+    justify-content: center;
+  }
+
+  .diptico-section p {
+    padding-right: 0;
+  }
+
+  .hero-btn {
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .event-box {
+    min-width: 100%;
+    height: 150px;
+  }
+}

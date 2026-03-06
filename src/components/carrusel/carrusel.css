@@ -1,0 +1,187 @@
+.speakers-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+  padding: 2rem 0;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 10vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.title-s{
+  text-align: center;
+  padding: 8rem 0 0 0;
+  margin: 0 0 5rem 0;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #222222;
+}
+
+.text-section {
+  flex: 1 1 300px;
+  padding: 10px;
+}
+
+.text-section h2 {
+  color: #222222;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.text-section p {
+  color: #2e2e2e;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.carousel-section {
+  position: relative;
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px; 
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.11);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 2px solid white;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 8px 17px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.nav-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+.nav-arrow.left {
+  left: 10px;
+}
+
+.nav-arrow.right {
+  right: 10px;
+}
+
+
+@media (max-width: 1668px) {
+  .carousel-container {
+    max-width: 800px;
+  }
+
+
+  .carousel-section {
+    max-width: 300px; 
+  }
+
+  .carousel-image {
+    max-width: 300px; 
+  }
+
+  .nav-arrow {
+    font-size: 15px;
+    padding: 8px 13px;
+  }
+
+}
+
+/* 📱 Responsive: Tablets y móviles */
+@media (max-width: 780px) {
+  
+  .carousel-container {
+    
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carousel-image {
+    max-width: 250px; 
+  }
+
+  .title-s{
+     color: #000000;
+    padding: 6rem 0 0 0;
+    font-size: 2rem;
+  }
+
+  .text-section {
+    flex: 1 1 0px;
+    text-align: center;
+  }
+
+  .text-section h2 {
+    color: #000000;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+   color: #000000;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .nav-arrow {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+
+
+}
+
+
+@media (max-width: 400px) {
+  .carousel-container {
+    flex-direction: column;
+    gap: 0;
+    /* padding-top: 12%; */
+  }
+
+  .carousel-image {
+    max-width: 200px; 
+  }
+
+  .text-section h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .text-section p {
+    font-size: 0.8rem;
+  }
+}
+
+

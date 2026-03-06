@@ -1,0 +1,183 @@
+.cronograma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  padding: 2rem;
+  letter-spacing: -1px;
+  width: 100%;
+}
+
+h2.title-crono {
+  padding: 0.5rem 0;
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+}
+
+.recomendaciones {
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+  width: 100%;
+  height: fit-content;
+  background-color: #EDEDED;
+}
+
+.recomendaciones a {
+  font-size: 2vh;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.columna {
+  flex: 1;
+  padding: 2rem 2rem;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  min-height: 300px;
+}
+
+.numero {
+  font-size: 7rem;
+  color: #FF2850;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.columna-titulo {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 2rem 0 2rem 0;
+  letter-spacing: 0.5px;
+}
+
+.columna-descripcion {
+  color: #888888;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  flex: 1;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.items-lista {
+  display: none;
+}
+
+.items-lista p {
+  color: #ffffff;
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  opacity: 0.95;
+}
+
+.items-lista p.underline {
+  text-decoration: underline;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.items-lista p.strikethrough {
+  text-decoration: line-through solid #FF2850;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.columna:first-child::before {
+  display: none;
+}
+
+.divisor {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 2px;
+  background-color: #333333;
+}
+
+.columna:last-child::after {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .contenedor {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .columna {
+    min-width: 100%;
+    border-bottom: 1px solid #333333;
+  }
+
+  .divisor {
+    display: none;
+  }
+
+  .numero {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 780px) {
+  h2.title-crono {
+    padding: 2rem 0;
+    font-size: 2rem;
+  }
+
+  .recomendaciones {
+    margin-top: 5%;
+  }
+
+  .recomendaciones a {
+    font-size: 0.8vh;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    color: black;
+  }
+
+  .numero {
+    font-size: 3rem;
+  }
+
+  .columna-titulo {
+    font-size: 1rem;
+  }
+
+  .columna-descripcion {
+    font-size: 0.75rem;
+  }
+}
+
+
