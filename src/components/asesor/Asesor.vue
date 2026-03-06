@@ -77,7 +77,7 @@ const handleDipticoClick = () => {
       </div>
 
       <div class="right">
-        <img src="/images/asesores.png" alt="Asesores" class="section-image asesor-image" />
+        <img src="#" alt="Asesores" class="section-image asesor-image" />
       </div>
     </div>
 

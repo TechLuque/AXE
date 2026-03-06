@@ -58,14 +58,6 @@ onMounted(() => {
 })
 
 
-
-
-onMounted(() => {
-  verificarAcceso()
-  document.body.style.overflowY = 'auto'
-  document.body.style.overflowX = 'hidden'
-})
-
 const whatsappLink = 'https://us02web.zoom.us/j/87632757638?pwd=TpWrHgLaKTy5ruLP9rvwqf6AjaDs6P.1'
 </script>
 
