@@ -31,7 +31,7 @@ const handleFooterClick = () => {
     <img src="/images/LOGO LUQUE B.png" alt="Logo" class="footer-logo">
       <p class="footer-text">©2026 Álvaro Luque</p>
 
-        <a href="/REGLAS AXE MAR26.pdf" target="_blank">
+        <a href="https://assets.cdn.filesafe.space/vNTl04SMXRMV7I4CYfsP/media/69ab32865e05eef3b3bed56f.pdf" target="_blank">
 
           <span class="footer-text" >Reglamento Axelerate</span>
         </a>

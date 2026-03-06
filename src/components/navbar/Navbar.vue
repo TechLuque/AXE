@@ -23,7 +23,7 @@
         </a>
       </div>
       <div class="nav-item" data-tooltip="Recomendaciones">
-        <a href="/REGLAS AXE MAR26.pdf" target="_blank">
+        <a href="https://assets.cdn.filesafe.space/vNTl04SMXRMV7I4CYfsP/media/69ab32865e05eef3b3bed56f.pdf" target="_blank">
           <i class="ph ph-list"></i>
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="mobile-icon"><g><path d="M9 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9h-6V3zm0 2v4h4V5H9zm9 11H6v-2h12v2zm0-4H6V9h12v3z" fill="#FFFFFF" opacity="1" data-original="#000000"></path></g></svg>
           <span class="nav-text">Reglas Axelerate</span>
