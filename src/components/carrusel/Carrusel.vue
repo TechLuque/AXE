@@ -3,11 +3,20 @@
   <div class="carousel-container">
 
     <div class="carousel-section">
-      <span class="nav-arrow left" @click="prevSlide">&#10094;</span>
+      <span class="nav-arrow left" @click="prevSlide" :class="{ disabled: isLoading }">&#10094;</span>
       
-      <img :src="currentItem.image" alt="Imagen del carrusel" class="carousel-image" />
+      <div class="image-wrapper">
+        <img 
+          :src="currentItem.image" 
+          alt="Imagen del carrusel" 
+          class="carousel-image"
+          :class="{ loading: isLoading }"
+          @load="onImageLoad"
+        />
+        <div v-if="isLoading" class="loading-spinner"></div>
+      </div>
 
-      <span class="nav-arrow right" @click="nextSlide">&#10095;</span>
+      <span class="nav-arrow right" @click="nextSlide" :class="{ disabled: isLoading }">&#10095;</span>
     </div>
 
 
@@ -24,6 +33,8 @@ export default {
   data() {
     return {
       currentIndex: 0,
+      isLoading: false,
+      preloadedImages: new Set(),
       items: [
   {
     name: 'Álvaro Luque',
@@ -39,7 +50,7 @@ export default {
   },
   {
     name: 'Juan José Arenales',
-    image: '../images/Juanjo.jpg',
+    image: '/images/Juanjo.jpg',
     description:
       'Empresario, inversionista y mentor, Mercadologo con MBA, con más de 25 años de experiencia en varias industrias como construcción, bolsa de valores, banca corporativa y negocios digitales. He mentoreado a más de 8,000 emprendedores. La Misión de mi vida es ayudar a prosperar a los empresarios.'
   },
@@ -68,14 +79,42 @@ export default {
     currentItem() {
       return this.items[this.currentIndex];
     },
+    nextIndex() {
+      return (this.currentIndex + 1) % this.items.length;
+    },
+    prevIndex() {
+      return (this.currentIndex - 1 + this.items.length) % this.items.length;
+    }
+  },
+  mounted() {
+    // Precargar imagen actual y siguiente
+    this.preloadImage(this.currentItem.image);
+    this.preloadImage(this.items[this.nextIndex].image);
   },
   methods: {
+    preloadImage(src) {
+      if (this.preloadedImages.has(src)) return;
+      
+      const img = new Image();
+      img.onload = () => {
+        this.preloadedImages.add(src);
+      };
+      img.src = src;
+    },
+    onImageLoad() {
+      this.isLoading = false;
+    },
     prevSlide() {
-      this.currentIndex =
-        (this.currentIndex - 1 + this.items.length) % this.items.length;
+      if (this.isLoading) return;
+      this.isLoading = true;
+      this.currentIndex = this.prevIndex;
+      this.preloadImage(this.items[this.prevIndex].image);
     },
     nextSlide() {
-      this.currentIndex = (this.currentIndex + 1) % this.items.length;
+      if (this.isLoading) return;
+      this.isLoading = true;
+      this.currentIndex = this.nextIndex;
+      this.preloadImage(this.items[this.nextIndex].image);
     },
   },
 };
