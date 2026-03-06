@@ -72,7 +72,7 @@ const closeLbsModal = () => {
             Ingresar Al Auditorio
           </a>
 
-<!--   -->
+<!--   
           <a
             href="https://www.alvaroluque.com/mentoria-axelerate"
             class="hero-btn lbs"
@@ -81,10 +81,10 @@ const closeLbsModal = () => {
           >
             Mentoría Axelerate
           </a>
+-->
 
 
-
-<!--   
+  
           <a
             href="https://cliczy.com/separacion-msta"
             class="hero-btn lbs"
@@ -93,7 +93,7 @@ const closeLbsModal = () => {
           >
             Maestría Del Dinero
           </a>
--->
+
 
 <!--  
           <a
