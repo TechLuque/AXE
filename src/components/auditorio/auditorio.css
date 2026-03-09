@@ -7,6 +7,7 @@
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
+  padding-top: 15rem;
 }
 
 .hero-content {
@@ -245,6 +246,7 @@
 
   .auditorio-hero {
     padding: 2rem 1.5rem;
+    padding-top: 5rem;
     min-height: 100vh;
     display: flex;
     align-items: center;

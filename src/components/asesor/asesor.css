@@ -241,6 +241,18 @@ p {
     min-height: 60vh;
   }
 
+  .asesor-section {
+    background: url('/images/axe_fondoseccion_06.webp') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .diptico-section {
+    background: url('/images/axe_fondoseccion_02.webp') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
   .hero-content {
     flex-direction: column;
     align-items: center;
