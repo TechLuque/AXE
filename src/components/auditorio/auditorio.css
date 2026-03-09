@@ -358,7 +358,7 @@
 /* Responsive */
 @media (max-width: 600px) {
   .auditorio-hero {
-    padding: 4rem 3rem;
+    padding: 4rem 1.5rem 1.5rem;
   }
 }
 
