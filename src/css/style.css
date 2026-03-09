@@ -393,9 +393,8 @@ a {
   }
 
   .lobby-fixed{
-    background: url('/images/axe_bgmob_l.webp') no-repeat center center scroll;
-    background-size: 75%;
-    background-color: #0f0f1a;
+    background: url('/images/axe_bgmob_l.webp') no-repeat center 20% scroll;
+    background-size: cover;
     position: fixed;
     top: 0;
     left: 0;
