@@ -1,13 +1,13 @@
 .auditorio-hero {
-  min-height: auto;
+  min-height: 85vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 3rem 6rem;
+  padding: 5rem 6rem;
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
-  padding-top: 8rem;
+  padding-top: 40rem;
 }
 
 .hero-content {
@@ -16,6 +16,7 @@
   align-items: flex-end;
   width: 100%;
   gap: 2rem;
+  margin-top: auto;
 }
 
 .left {
@@ -245,11 +246,11 @@
   }
 
   .auditorio-hero {
-    padding: 1rem 1.5rem;
+    padding: 2rem 1.5rem;
     padding-top: 3rem;
-    min-height: auto;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-end;
     flex-direction: column;
   }
@@ -293,6 +294,7 @@
 @media (max-width: 900px) {
   .auditorio-hero {
     padding: 7rem 3rem;
+    
   }
 
   .hero-content {
