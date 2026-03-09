@@ -252,6 +252,9 @@
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
+    background: url('/images/axe_bgmob_l.webp') no-repeat center center;
+    background-size: 50%;
+    background-attachment: scroll;
   }
 
   .hero-content {

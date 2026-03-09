@@ -87,6 +87,19 @@ button:active {
   color: #ffffff;
 }
 
+.btn-ingresar {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.btn-ingresar .text {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: #ffffff;
+}
+
 
 .shimmer {
     position: absolute;
