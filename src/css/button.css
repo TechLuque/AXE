@@ -88,9 +88,8 @@ button:active {
 }
 
 .btn-ingresar {
-  background: transparent;
   border: none;
-  box-shadow: none;
+  box-shadow: 0 2px 3px 1px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 -10px 20px -10px hsla(var(--shadow-hue),10%,90%,95%);
 }
 
 .btn-ingresar .text {

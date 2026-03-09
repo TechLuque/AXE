@@ -1,13 +1,13 @@
 .auditorio-hero {
-  min-height: 85vh;
+  min-height: auto;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 5rem 6rem;
+  padding: 3rem 6rem;
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
-  padding-top: 15rem;
+  padding-top: 8rem;
 }
 
 .hero-content {
@@ -245,16 +245,13 @@
   }
 
   .auditorio-hero {
-    padding: 2rem 1.5rem;
-    padding-top: 5rem;
-    min-height: 100vh;
+    padding: 1rem 1.5rem;
+    padding-top: 3rem;
+    min-height: auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
-    background: url('/images/axe_bgmob_l.webp') no-repeat center center;
-    background-size: 50%;
-    background-attachment: scroll;
   }
 
   .hero-content {
