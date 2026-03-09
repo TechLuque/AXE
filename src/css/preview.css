@@ -20,7 +20,7 @@ html {
   grid-template-columns: 50% 50%;
   width: 100%;
   height: 100%;
-  overflow: hidden !important;
+  overflow-x: hidden;
 }
 
 .medium{
@@ -40,7 +40,8 @@ html {
 }
 
 .logo-image-welcome {
-  max-height: 100px;
+  max-height: clamp(50px, 8vw, 140px);
+  max-width: 80%;
   object-fit: contain;
   margin-top: 1rem;
 }
@@ -105,11 +106,6 @@ html {
 
 
 @media (max-width: 1700px) {
-
-  .logo-image-welcome {
-    max-height: 150px;
-    margin-top: 2rem;
-  }
 
   .cta-btn.outline {
     font-size: 0.9rem;

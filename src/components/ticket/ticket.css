@@ -182,15 +182,8 @@
 
 @media (max-width: 730px) {
 
-  .logo-image-welcome {
-    max-height: 120px;
-    margin-top: 6rem;
-  }
-
-
-    .ticket {
+  .ticket {
     width: 65vw;
-
   }
 
 }
@@ -198,26 +191,14 @@
 
 
 @media (max-width: 530px) {
-  .logo-image-welcome {
-    max-height: 100px;
-    margin-top: 2rem;
-  }
-
   .name {
     font-size: 3rem;
   }
-
 }
 
 
 @media (max-width: 480px) {
-  .logo-image-welcome {
-    max-height: 80px;
-    margin-top: 2rem;
-  }
-
   .name {
     font-size: 2rem;
   }
-
 }
