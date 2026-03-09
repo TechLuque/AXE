@@ -161,11 +161,9 @@
 
 @media (max-width: 900px) {
   .ticket {
-    top: -10%;
     --scale: 1;
     width: 55vw;
     height: auto;
-
   }
 }
 

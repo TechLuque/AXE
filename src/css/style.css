@@ -285,8 +285,8 @@ a {
 
 
     .lobby-fixed{
-      background: url('/images/BG_EDDIVLobby.webp') no-repeat center top fixed;
-      background-size: 150%;
+      background: url('/images/BG_EDDIVLobby.webp') no-repeat center top scroll;
+      background-size: cover;
       position: fixed;
       top: 0;
       left: 0;
@@ -352,7 +352,7 @@ a {
 @media (max-width: 630px) {
   body,
   html {
-    background: url('/images/axe_bgmob_h.webp') no-repeat center top fixed;
+    background: url('/images/axe_bgmob_h.webp') no-repeat center top scroll;
     background-size: cover;
   }
 
@@ -393,7 +393,9 @@ a {
   }
 
   .lobby-fixed{
-    background: url('/images/axe_bgmob_l.webp') no-repeat center top fixed;
+    background: url('/images/axe_bgmob_l.webp') no-repeat center center scroll;
+    background-size: 75%;
+    background-color: #0f0f1a;
     position: fixed;
     top: 0;
     left: 0;

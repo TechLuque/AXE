@@ -13,7 +13,7 @@ html {
 
 .card-usu {
   min-height: 100vh;
-  background: url('/images/axe_fondoseccion_02.webp') no-repeat center center fixed;
+  background: url('/images/axe_fondoseccion_02.webp') no-repeat center center scroll;
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
@@ -135,7 +135,8 @@ html {
 @media (max-width: 900px) {
   
   .card-usu {
-    background: url('/images/BG_BoletoMob.webp') no-repeat center top fixed;
+    background: url('/images/BG_BoletoMob.webp') no-repeat center top scroll;
+    background-size: cover;
   }
 
 
