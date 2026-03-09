@@ -50,6 +50,32 @@ onMounted(() => {
     }
   }
 
+  function updateActiveOnScroll() {
+    const sections = [
+      { id: '#auditorio', item: navItems[0] },
+      { id: '#speakers', item: navItems[1] },
+      { id: '#cronograma', item: navItems[2] }
+    ]
+
+    let currentSection = null
+    
+    sections.forEach(({ id, item }) => {
+      const element = document.querySelector(id)
+      if (element) {
+        const rect = element.getBoundingClientRect()
+        if (rect.top <= window.innerHeight / 2) {
+          currentSection = item
+        }
+      }
+    })
+
+    if (currentSection) {
+      navItems.forEach(i => i.classList.remove('active'))
+      currentSection.classList.add('active')
+      updateIndicatorPosition()
+    }
+  }
+
   navItems.forEach(item => {
     item.addEventListener('click', e => {
       const href = item.querySelector('a')?.getAttribute('href')
@@ -75,6 +101,7 @@ onMounted(() => {
   })
 
   window.addEventListener('resize', updateIndicatorPosition)
+  window.addEventListener('scroll', updateActiveOnScroll)
   updateIndicatorPosition()
 })
 </script>
