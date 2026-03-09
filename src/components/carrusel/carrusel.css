@@ -6,6 +6,8 @@
   width: 100%;
   min-height: 50vh;
   padding: 2rem 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .carousel-container {

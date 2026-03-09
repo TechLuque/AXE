@@ -287,6 +287,7 @@ a {
       right: 0;
       bottom: 0;
       overflow: auto;
+      overflow-x: hidden !important;
   }
 
 
@@ -393,6 +394,7 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    overflow-x: hidden !important;
   }
 
   .logo-top {

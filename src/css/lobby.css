@@ -17,8 +17,10 @@ body {
   font-family: 'Helvetica', sans-serif;
   background-color: var(--bg);
   color: var(--text);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   overflow-y: auto;
+  width: 100%;
+  max-width: 100vw;
 }
 
 /* Scrollbar personalizada - invisible pero funcional */
@@ -54,6 +56,10 @@ body {
 
  section {
     min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
 #asesor {

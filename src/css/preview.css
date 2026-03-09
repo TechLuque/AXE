@@ -6,7 +6,7 @@ html {
   padding: 0;
   color: white;
   overflow: auto;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -119,6 +119,13 @@ html {
     gap: 3rem;
   }
 
+}
+
+@media (min-width: 2200px) {
+  .logo-image-welcome {
+    max-height: 80px;
+    margin-top: 1rem;
+  }
 }
 
 

@@ -60,6 +60,7 @@ button {
     border-radius: 1em;
     scale: 1;
     transition: all var(--spring-duration) var(--spring-easing);
+    overflow: hidden;
 }
 
 
@@ -89,7 +90,7 @@ button:active {
 
 .shimmer {
     position: absolute;
-    inset: -40px;
+    inset: -20px;
     border-radius: inherit;
     mask-image: conic-gradient(
         from var(--shimmer, 0deg),
@@ -124,7 +125,7 @@ button.active .shimmer::after {
     border-radius: inherit;
     position: absolute;
     mix-blend-mode: color;
-    inset: 40px;
+    inset: 15px;
     pointer-events: none;
 }
 
