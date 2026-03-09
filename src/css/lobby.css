@@ -83,10 +83,11 @@ body {
 @media (max-width: 780px) {
 
   #speakers {
-    background: url('/images/BG_Speakers_mov.webp') no-repeat top left fixed;
+    background: url('/images/BG_Speakers_mov.webp') no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
     }
 
 
