@@ -88,8 +88,9 @@ button:active {
 }
 
 .btn-ingresar {
-  border: none;
-  box-shadow: 0 2px 3px 1px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 -10px 20px -10px hsla(var(--shadow-hue),10%,90%,95%);
+  background-image: linear-gradient(315deg,#FF2850 20%,#FF2850  80%) !important;
+  border: none !important;
+  box-shadow: 0 2px 3px 1px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 -10px 20px -10px hsla(var(--shadow-hue),10%,90%,95%) !important;
 }
 
 .btn-ingresar .text {
