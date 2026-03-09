@@ -158,6 +158,12 @@
 /* 📱 Responsive: Tablets y móviles */
 @media (max-width: 780px) {
   
+  .speakers-wrapper {
+    background: url('/images/BG_Speakers_mov.webp') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
   .carousel-container {
     
     flex-direction: column;
