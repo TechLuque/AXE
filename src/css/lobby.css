@@ -85,7 +85,9 @@ body {
 
   #speakers {
     background: url('/images/BG_Speakers_mov.webp') no-repeat center center;
-    background-size: cover;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: scroll;
     width: 100%;
     }
