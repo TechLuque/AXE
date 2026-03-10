@@ -1,5 +1,5 @@
 <script setup>
-import { ref, nextTick, onMounted } from 'vue'
+import { ref, nextTick } from 'vue'
 
 
 const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbyNubbJFPkUej0Dk0HhzP9qtOLx_yKS5jhfENql4rGmwdUXXM_FzcOXO9BdrV1JYYqk/exec'
@@ -7,23 +7,6 @@ const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbyNubbJFPkUej0Dk0
 const joinUrl = ref(localStorage.getItem('join_url') || '')
 const showVideoModal = ref(false)
 const showLbsModal = ref(false)
-const eventVideo = ref(null)
-
-onMounted(async () => {
-  await nextTick()
-  const video = eventVideo.value
-  if (!video) return
-  video.load()
-  const tryPlay = () => {
-    const p = video.play()
-    if (p !== undefined) p.catch(() => {})
-  }
-  if (video.readyState >= 3) {
-    tryPlay()
-  } else {
-    video.addEventListener('canplaythrough', tryPlay, { once: true })
-  }
-})
 
 const handleJoinClick = (e) => {
   if (!joinUrl.value) {
@@ -134,7 +117,6 @@ const closeLbsModal = () => {
           <p class="next-event-label"><span style="color:#FF2850">●</span> PRÓXIMO EVENTO</p>
           <div class="video-wrapper">
             <video
-              ref="eventVideo"
               class="event-video"
               autoplay
               muted
