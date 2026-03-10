@@ -129,24 +129,35 @@ html {
 
 
 @media (max-width: 900px) {
-  
+
   .card-usu {
     background: url('/images/BG_BoletoMob.webp') no-repeat center top fixed;
   }
-
 
   .card-usu {
     display: flex;
     flex-direction: column;
   }
 
-  .logo-image-welcome {
-    max-height: 60px;
-    margin-top: 2rem;
+  .medium {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .welcome {
     gap: 3rem;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-image-welcome {
+    max-height: 60px;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
