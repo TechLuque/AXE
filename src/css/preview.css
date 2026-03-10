@@ -39,6 +39,12 @@ html {
   gap: 5rem;
 }
 
+.welcome > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .logo-image-welcome {
   max-height: clamp(50px, 8vw, 140px);
   max-width: 80%;

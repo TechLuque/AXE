@@ -285,7 +285,7 @@ a {
 
 
     .lobby-fixed{
-      background: url('/images/BG_EDDIVLobby.webp') no-repeat center top fixed;
+      background: url('/images/BG_EDDIVLobby.webp') no-repeat center top scroll;
       background-size: 150%;
       position: fixed;
       top: 0;
