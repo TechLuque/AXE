@@ -157,24 +157,24 @@
 
 /* 📱 Responsive: Tablets y móviles */
 @media (max-width: 780px) {
-  
+
   .speakers-wrapper {
-    min-height: 50vh;
+    min-height: auto;
+    padding: 1rem 0 2rem 0;
   }
 
   .carousel-container {
-    
     flex-direction: column;
     gap: 10px;
   }
 
   .carousel-image {
-    max-width: 250px; 
+    max-width: 250px;
   }
 
-  .title-s{
-     color: #000000;
-    padding: 6rem 0 0 0;
+  .title-s {
+    color: #ffffff;
+    padding: 2rem 0 0 0;
     font-size: 2rem;
   }
 
@@ -184,13 +184,13 @@
   }
 
   .text-section h2 {
-    color: #000000;
+    color: #ffffff;
     margin: 0;
     font-size: 1.5rem;
   }
 
   .text-section p {
-   color: #000000;
+    color: #e0e0e0;
     font-size: 1rem;
     line-height: 1.5;
   }
@@ -199,7 +199,6 @@
     font-size: 24px;
     padding: 6px 12px;
   }
-
 
 }
 
