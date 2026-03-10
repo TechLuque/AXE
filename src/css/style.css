@@ -303,15 +303,25 @@ a {
   .overlay {
     padding: 3rem 3rem;
     gap: 1rem;
+    grid-template-columns: 2fr 1.5fr;
   }
 
   .title-main::before {
-    font-size: 3rem;
+    font-size: 2.6rem;
     letter-spacing: 0;
   }
 
   .left-column {
     padding: 1rem 1.5rem;
+  }
+
+  .next-event {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .right-column {
+    padding: 0 1rem;
   }
 }
 
