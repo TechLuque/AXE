@@ -21,7 +21,7 @@
       </p>
       <div class="modal-actions">
         <button type="button" @click="closeModal">
-          <a class="soporte" href="https://api.whatsapp.com/send?phone=573176484451&text=Necesito%20ayuda%20para%20ingresar%20a%20Energ%C3%ADa%20del%20Dinero">SOPORTE</a>
+          <a class="soporte" href="https://wa.me/573176484451?text=Hola%20tengo%20problemas%20para%20ingresar%20a%20la%20experiencia%20de%20Axelerate">SOPORTE</a>
         </button>
         <button type="button" :disabled="cargando" @click="login">
           <span v-if="cargando">INGRESAR</span>
