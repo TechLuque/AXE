@@ -303,7 +303,7 @@ a {
   .overlay {
     padding: 3rem 3rem;
     gap: 1rem;
-    grid-template-columns: 2fr 1.5fr;
+    grid-template-columns: 2.5fr 1.2fr;
   }
 
   .title-main::before {
