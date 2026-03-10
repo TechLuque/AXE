@@ -90,6 +90,7 @@ body {
     background-position: center;
     background-attachment: scroll;
     width: 100%;
+    min-height: auto;
     }
 
 
