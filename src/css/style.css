@@ -420,6 +420,7 @@ a {
 
   .lobby-fixed{
     background: url('/images/axe_bgmob_l.webp') no-repeat center top fixed;
+    background-size: 85%;
     position: fixed;
     top: 0;
     left: 0;
