@@ -299,6 +299,22 @@ a {
 
 
 
+@media (max-width: 1400px) and (min-width: 1125px) {
+  .overlay {
+    padding: 3rem 3rem;
+    gap: 1rem;
+  }
+
+  .title-main::before {
+    font-size: 3rem;
+    letter-spacing: 0;
+  }
+
+  .left-column {
+    padding: 1rem 1.5rem;
+  }
+}
+
 @media (max-width: 1124px) {
   .overlay {
     display: flex;
