@@ -9,9 +9,11 @@ const showVideoModal = ref(false)
 const showLbsModal = ref(false)
 const eventVideo = ref(null)
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick()
   const video = eventVideo.value
   if (!video) return
+  video.load()
   const tryPlay = () => {
     const p = video.play()
     if (p !== undefined) p.catch(() => {})
@@ -19,7 +21,7 @@ onMounted(() => {
   if (video.readyState >= 3) {
     tryPlay()
   } else {
-    video.addEventListener('canplay', tryPlay, { once: true })
+    video.addEventListener('canplaythrough', tryPlay, { once: true })
   }
 })
 
