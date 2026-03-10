@@ -1,5 +1,5 @@
 <script setup>
-import { ref, nextTick } from 'vue'
+import { ref, nextTick, onMounted } from 'vue'
 
 
 const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbyNubbJFPkUej0Dk0HhzP9qtOLx_yKS5jhfENql4rGmwdUXXM_FzcOXO9BdrV1JYYqk/exec'
@@ -7,6 +7,21 @@ const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbyNubbJFPkUej0Dk0
 const joinUrl = ref(localStorage.getItem('join_url') || '')
 const showVideoModal = ref(false)
 const showLbsModal = ref(false)
+const eventVideo = ref(null)
+
+onMounted(() => {
+  const video = eventVideo.value
+  if (!video) return
+  const tryPlay = () => {
+    const p = video.play()
+    if (p !== undefined) p.catch(() => {})
+  }
+  if (video.readyState >= 3) {
+    tryPlay()
+  } else {
+    video.addEventListener('canplay', tryPlay, { once: true })
+  }
+})
 
 const handleJoinClick = (e) => {
   if (!joinUrl.value) {
@@ -116,13 +131,14 @@ const closeLbsModal = () => {
         <div class="event-box">
           <p class="next-event-label"><span style="color:#FF2850">●</span> PRÓXIMO EVENTO</p>
           <div class="video-wrapper">
-            <video 
-              class="event-video" 
-              autoplay 
-              muted 
-              playsinline 
-              loop 
-              preload="metadata">
+            <video
+              ref="eventVideo"
+              class="event-video"
+              autoplay
+              muted
+              playsinline
+              loop
+              preload="auto">
               <source src="/images/Loop_LBS.mp4" type="video/mp4" />
             </video>
             <div class="overlay-text">
