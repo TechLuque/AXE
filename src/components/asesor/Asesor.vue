@@ -90,7 +90,7 @@ const handleDipticoClick = () => {
         <div class="button-group">
 
           <a
-            href="https://assets.cdn.filesafe.space/vNTl04SMXRMV7I4CYfsP/media/69b3f9c9cab7f7ad41a6d7c5.pdf"
+            href="https://assets.cdn.filesafe.space/vNTl04SMXRMV7I4CYfsP/media/69b489d0eba487331d332fe5.pdf"
             class="hero-btn"
             target="_blank"
             rel="noopener noreferrer"
