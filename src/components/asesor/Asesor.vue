@@ -56,7 +56,7 @@ const handleDipticoClick = () => {
         <div class="button-group">
 
           <a
-            href="https://us02web.zoom.us/j/8656713692?omn=82849114527"
+            href="https://us02web.zoom.us/j/8656713692?omn=83234678701"
             class="hero-btn"
             @click="handleAsesorClick"
           >

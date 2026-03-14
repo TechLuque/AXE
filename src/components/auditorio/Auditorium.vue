@@ -86,7 +86,7 @@ const closeLbsModal = () => {
 
 -->
    <!-- comentario -->
- <!-- 
+
           <a
             href="https://cliczy.com/separacion-msta"
             class="hero-btn lbs"
@@ -95,7 +95,7 @@ const closeLbsModal = () => {
           >
             Maestría Del Dinero
           </a>
---> 
+
    <!-- comentario -->
 
    <!-- 
