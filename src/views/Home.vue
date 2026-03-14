@@ -80,7 +80,7 @@ const closeVideoModal = () => {
               </button>
               <button class="btn-entrada">
                 <span class="text">
-                  <a href="https://www.luqueacademy.com/offers/aFSdbcVE/checkout">ADQUIER TU ENTRADA</a>
+                  <a href="https://www.luqueacademy.com/offers/aFSdbcVE/checkout">ADQUIERE TU ENTRADA</a>
                 </span>
                 <span class="shimmer"></span>
               </button>
