@@ -284,7 +284,7 @@ a {
 }
 
 
-    .lobby-fixed{
+    .lobby-bg {
       background: url('/images/BG_EDDIVLobby.webp') no-repeat center top scroll;
       background-size: 150%;
       position: fixed;
@@ -292,8 +292,12 @@ a {
       left: 0;
       right: 0;
       bottom: 0;
-      overflow: auto;
-      overflow-x: hidden !important;
+      z-index: -1;
+  }
+
+  .lobby-content {
+      position: relative;
+      z-index: 1;
   }
 
 
@@ -418,16 +422,9 @@ a {
     align-items: center;
   }
 
-  .lobby-fixed{
-    background: url('/images/axe_bgmob_l.webp') no-repeat center 8% fixed;
+  .lobby-bg {
+    background: url('/images/axe_bgmob_l.webp') no-repeat center 8% scroll;
     background-size: 85%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-    overflow-x: hidden !important;
   }
 
   .logo-top {

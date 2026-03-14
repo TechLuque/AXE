@@ -62,29 +62,32 @@ const whatsappLink = 'https://us02web.zoom.us/j/87632757638?pwd=TpWrHgLaKTy5ruLP
 </script>
 
 <template>
-  <div v-if="accesoAutorizado" class="lobby-fixed">
-    <Navbar />
-    <section id="auditorio">
-      <Auditorium />
-    </section>
-    
-    <!--  //aqui se modifica//  -->
+  <div v-if="accesoAutorizado">
+    <div class="lobby-bg"></div>
+    <div class="lobby-content">
+      <Navbar />
+      <section id="auditorio">
+        <Auditorium />
+      </section>
 
-    <section id="asesor">
-      <Asesor />
-    </section>
+      <!--  //aqui se modifica//  -->
 
-    <section id="speakers">
-      <Carrusel />
-    </section>
+      <section id="asesor">
+        <Asesor />
+      </section>
 
-    <section id="cronograma">
-      <Schedule />
-    </section>
+      <section id="speakers">
+        <Carrusel />
+      </section>
 
-    <section id="footer">
-      <Footer />
-    </section>
+      <section id="cronograma">
+        <Schedule />
+      </section>
+
+      <section id="footer">
+        <Footer />
+      </section>
+    </div>
   </div>
 </template>
 
