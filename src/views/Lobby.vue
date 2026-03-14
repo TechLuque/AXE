@@ -75,11 +75,11 @@ const whatsappLink = 'https://us02web.zoom.us/j/87632757638?pwd=TpWrHgLaKTy5ruLP
       </section>
 
       <!--  //aqui se modifica//  -->
- <!-- 
+ <!-- -->
       <section id="asesor">
         <Asesor />
       </section>
- -->
+ 
       <section id="speakers">
         <Carrusel />
       </section>
