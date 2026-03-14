@@ -22,9 +22,9 @@
       <div class="modal-actions">
         <button type="button" @click="closeModal">
           
-          <a class="soporte" href="https://us02web.zoom.us/j/8656713692?omn=82849114527">SOPORTE</a>
+           <!--- <a class="soporte" href="https://us02web.zoom.us/j/8656713692?omn=82849114527">SOPORTE</a>-->
 
-          <!--- <a class="soporte" href="https://wa.me/573176484451?text=Hola%20tengo%20problemas%20para%20ingresar%20a%20la%20experiencia%20de%20Axelerate">SOPORTE</a> -->
+         <a class="soporte" href="https://wa.me/573176484451?text=Hola%20tengo%20problemas%20para%20ingresar%20a%20la%20experiencia%20de%20Axelerate">SOPORTE</a> 
         </button>
         <button type="button" :disabled="cargando" @click="login">
           <span v-if="cargando">INGRESAR</span>
