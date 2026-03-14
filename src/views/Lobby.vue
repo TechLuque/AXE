@@ -20,9 +20,10 @@ const verificarAcceso = async () => {
   const vieneDePreview = sessionStorage.getItem('previewAuth') === 'true'
 
   // Evita depender de history.state, que puede fallar en Safari iOS.
-  if (correo && sesionIniciada) {
+  // Si viene de Preview (ya verificado) o ya tiene sesión guardada, permite el acceso sin re-fetch.
+  if (correo && (sesionIniciada || vieneDePreview)) {
     accesoAutorizado.value = true
-    if (vieneDePreview) sessionStorage.removeItem('previewAuth')
+    sessionStorage.removeItem('previewAuth')
     return
   }
 
@@ -36,6 +37,7 @@ const verificarAcceso = async () => {
 
     if (user) {
       accesoAutorizado.value = true
+      localStorage.setItem('sesionIniciada', 'true')
     } else {
       router.push('/')
     }
