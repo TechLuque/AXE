@@ -37,14 +37,16 @@ onMounted(() => {
 const handleIngresar = async () => {
   cargando.value = true
 
-  router.push({
-    name: 'Lobby',
-    state: {
-      correo: localStorage.getItem('correo'),
-      nombre: nombre.value,
-      yaAutenticado: true
-    }
-  })
+  // En iOS/Safari el history.state puede no persistir de forma consistente.
+  sessionStorage.setItem('previewAuth', 'true')
+
+  try {
+    await router.push({ name: 'Lobby' })
+  } catch (err) {
+    console.error('Error al navegar a Lobby:', err)
+    cargando.value = false
+    window.location.assign('/Lobby')
+  }
 }
 </script>
 

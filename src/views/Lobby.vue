@@ -15,22 +15,24 @@ const router = useRouter()
 const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbyNubbJFPkUej0Dk0HhzP9qtOLx_yKS5jhfENql4rGmwdUXXM_FzcOXO9BdrV1JYYqk/exec'
 
 const verificarAcceso = async () => {
-  // Verificar si ya viene autenticado desde Preview
-  if (history.state?.yaAutenticado) {
+  const correo = localStorage.getItem('correo')?.trim().toLowerCase()
+  const sesionIniciada = localStorage.getItem('sesionIniciada') === 'true'
+  const vieneDePreview = sessionStorage.getItem('previewAuth') === 'true'
+
+  // Evita depender de history.state, que puede fallar en Safari iOS.
+  if (correo && sesionIniciada) {
     accesoAutorizado.value = true
+    if (vieneDePreview) sessionStorage.removeItem('previewAuth')
     return
   }
 
-  const correo = localStorage.getItem('correo')
   if (!correo) return router.push('/')
 
   try {
     const res = await fetch(SHEET_API_URL)
     const data = await res.json()
 
-    const user = data.email.find(entry =>
-      entry.email.trim().toLowerCase() === correo.trim().toLowerCase()
-    )
+    const user = data.email.find(entry => entry.email.trim().toLowerCase() === correo)
 
     if (user) {
       accesoAutorizado.value = true
