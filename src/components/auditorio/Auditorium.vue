@@ -73,7 +73,7 @@ const closeLbsModal = () => {
           </a>
 
              <!-- comentario -->
-<!--   -->
+<!--   
              
           <a
             href="https://www.alvaroluque.com/mentoria-axelerate"
@@ -84,13 +84,13 @@ const closeLbsModal = () => {
             Mentoría Axelerate
           </a>
 
-
+-->
    <!-- comentario -->
  <!-- 
           <a
             href="https://cliczy.com/separacion-msta"
             class="hero-btn lbs"
-            target="_blank"
+            target="_blank"|
             rel="noopener noreferrer"
           >
             Maestría Del Dinero
