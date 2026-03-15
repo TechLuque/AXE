@@ -96,6 +96,14 @@ const closeLbsModal = () => {
             Maestría Del Dinero
           </a>
 
+                    <a
+            href="https://wa.me/573165267206?text=Quiero%20ingresar%20a%20Maestr%C3%ADa%20del%20dinero"
+            class="hero-btn lbs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Soporte Maestría
+          </a>
    <!-- comentario -->
 
    <!-- 
