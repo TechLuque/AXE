@@ -108,7 +108,7 @@ const closeLbsModal = () => {
           -->
    <!-- comentario -->
 
-   <!-- --> 
+   <!-- 
           <a
             href="#"
             class="hero-btn lbs"
@@ -116,7 +116,7 @@ const closeLbsModal = () => {
           >
             Luque Business Summit 2026
           </a>
-
+--> 
 
 
         </div>
