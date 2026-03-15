@@ -86,7 +86,7 @@ const closeLbsModal = () => {
 
 -->
    <!-- comentario -->
-
+   <!-- 
           <a
             href="https://cliczy.com/separacion-msta"
             class="hero-btn lbs"
@@ -104,9 +104,11 @@ const closeLbsModal = () => {
           >
             Soporte Maestría
           </a>
+
+          -->
    <!-- comentario -->
 
-   <!-- 
+   <!-- --> 
           <a
             href="#"
             class="hero-btn lbs"
@@ -115,7 +117,7 @@ const closeLbsModal = () => {
             Luque Business Summit 2026
           </a>
 
---> 
+
 
         </div>
         
