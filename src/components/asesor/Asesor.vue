@@ -56,7 +56,7 @@ const handleDipticoClick = () => {
         <div class="button-group">
 
           <a
-            href="https://us02web.zoom.us/j/8656713692?omn=83234678701"
+            href="https://wa.me/573165267206?text=Quiero%20ingresar%20a%20Maestr%C3%ADa%20del%20dinero"
             class="hero-btn"
             @click="handleAsesorClick"
           >
